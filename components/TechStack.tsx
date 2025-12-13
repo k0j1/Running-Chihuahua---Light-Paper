@@ -10,15 +10,9 @@ export const TechStack: React.FC = () => {
       icon: Box
     },
     {
-      title: 'AI Integration',
-      tech: 'Google Gemini API',
-      desc: 'チワワの思考や実況コメントを状況（コンテキスト）に応じてリアルタイム生成。',
-      icon: Code2
-    },
-    {
       title: 'Social Layer',
       tech: 'Farcaster Frame SDK (v2)',
-      desc: 'Warpcast等のクライアント内でシームレスに動作。FID、PFPの自動取得とソーシャルグラフ連携。',
+      desc: 'クライアント内でシームレスに動作。FID、PFPの自動取得とソーシャルグラフ連携。',
       icon: Share2
     },
     {

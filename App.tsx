@@ -3,7 +3,6 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Section } from './components/Section';
 import { Gameplay } from './components/Gameplay';
-import { TechStack } from './components/TechStack';
 import { Roadmap } from './components/Roadmap';
 import { Footer } from './components/Footer';
 import { Users, BarChart3, Share2 } from 'lucide-react';
@@ -38,21 +37,16 @@ const App: React.FC = () => {
           <Gameplay />
         </Section>
 
-        {/* 3. Technology */}
-        <Section id="tech" title="3. テクノロジー (Stack)">
-          <TechStack />
-        </Section>
-
-        {/* 4. Social & Leaderboard */}
-        <Section id="social" title="4. ソーシャル機能 (Social)" darker>
+        {/* 3. Social & Leaderboard (Renumbered from 4) */}
+        <Section id="social" title="3. ソーシャル機能 (Social)">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-slate-800 p-6 rounded-xl text-center border border-slate-700">
               <div className="mx-auto w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mb-4">
                 <Users className="h-8 w-8 text-purple-400" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Farcaster Native</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Play Now</h3>
               <p className="text-slate-400 text-sm">
-                ログイン不要で即座にプレイ可能。ゲーム結果はFarcasterのソーシャルグラフとリンクし、フレンド間での競争を促進します。
+                ウォレット接続ですぐに簡単にプレイ可能。
               </p>
             </div>
 
@@ -62,7 +56,7 @@ const App: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">Global Ranking</h3>
               <p className="text-slate-400 text-sm">
-                「High Score (最高得点)」と「Total Stats (累計貢献度)」の2種類のランキングを提供。トップランナーを目指せ。
+                「High Score (最高得点)」ランキングを提供。トップランナーを目指そう。
               </p>
             </div>
 
@@ -70,16 +64,16 @@ const App: React.FC = () => {
               <div className="mx-auto w-16 h-16 bg-pink-500/20 rounded-full flex items-center justify-center mb-4">
                 <Share2 className="h-8 w-8 text-pink-400" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Share to Warpcast</h3>
+              <h3 className="text-xl font-bold text-white mb-3">Share to Farcaster</h3>
               <p className="text-slate-400 text-sm">
-                ゲームオーバー時、リザルトをWarpcastにワンタップで投稿。バイラル効果を狙ったOGP画像が自動生成されます。
+                ゲームオーバー時、リザルトをワンタップで投稿。
               </p>
             </div>
           </div>
         </Section>
 
-        {/* 5. Roadmap */}
-        <Section id="roadmap" title="5. ロードマップ (Roadmap)">
+        {/* 4. Roadmap (Renumbered from 5) */}
+        <Section id="roadmap" title="4. ロードマップ (Roadmap)" darker>
           <Roadmap />
         </Section>
       </main>

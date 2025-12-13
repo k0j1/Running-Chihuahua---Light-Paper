@@ -5,7 +5,6 @@ import { NavItem } from '../types';
 const navItems: NavItem[] = [
   { label: '概要', href: '#abstract' },
   { label: 'ゲームプレイ', href: '#gameplay' },
-  { label: 'テクノロジー', href: '#tech' },
   { label: 'ソーシャル', href: '#social' },
   { label: 'ロードマップ', href: '#roadmap' },
 ];

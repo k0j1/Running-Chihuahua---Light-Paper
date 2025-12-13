@@ -19,7 +19,6 @@ const roadmapData: RoadmapItem[] = [
     title: 'AI機能の拡張',
     status: 'current',
     items: [
-      'Gemini APIを用いた「チワワの心の声」多様化',
       'レース展開に応じたリアルタイム実況機能の強化',
       'AIによる動的な難易度調整（調査中）'
     ]
