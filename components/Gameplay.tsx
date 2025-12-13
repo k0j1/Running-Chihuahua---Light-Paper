@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldAlert, ArrowLeftRight, Activity, Skull, Zap, Heart } from 'lucide-react';
+import { ShieldAlert, ArrowLeftRight, Activity, Skull, Zap, Heart, MousePointerClick, Gauge, Layers, Sparkles } from 'lucide-react';
 
 export const Gameplay: React.FC = () => {
   return (
@@ -111,6 +111,94 @@ export const Gameplay: React.FC = () => {
             </div>
           </li>
         </ul>
+      </div>
+
+      {/* 2.4 Controls & UI System */}
+      <div>
+        <h3 className="text-2xl font-bold text-white mb-8 flex items-center">
+          <MousePointerClick className="text-amber-500 mr-3 h-8 w-8" />
+          2.4 操作・UIシステム
+        </h3>
+
+        <div className="grid lg:grid-cols-2 gap-8">
+          {/* UI Elements */}
+          <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+            <h4 className="text-lg font-bold text-white mb-4 flex items-center">
+              <Layers className="mr-2 h-5 w-5 text-blue-400" />
+              HUD / UI表示
+            </h4>
+            <div className="space-y-4">
+              <div className="flex items-center justify-between p-3 bg-slate-900 rounded-lg border border-slate-800">
+                <div className="flex items-center text-slate-300">
+                  <Heart className="h-5 w-5 text-red-500 mr-3" />
+                  <span>ライフ (Hearts)</span>
+                </div>
+                <span className="text-sm text-slate-500">最大3つ。被弾で減少。</span>
+              </div>
+              <div className="flex items-center justify-between p-3 bg-slate-900 rounded-lg border border-slate-800">
+                <div className="flex items-center text-slate-300">
+                  <Activity className="h-5 w-5 text-green-500 mr-3" />
+                  <span>スコア & 距離</span>
+                </div>
+                <span className="text-sm text-slate-500">リアルタイム更新。</span>
+              </div>
+              <div className="flex items-center justify-between p-3 bg-slate-900 rounded-lg border border-slate-800">
+                <div className="flex items-center text-slate-300">
+                  <Zap className="h-5 w-5 text-yellow-500 mr-3" />
+                  <span>コンボ</span>
+                </div>
+                <span className="text-sm text-slate-500">連続回避で増加。</span>
+              </div>
+              <div className="flex items-center justify-between p-3 bg-slate-900 rounded-lg border border-slate-800">
+                <div className="flex items-center text-slate-300">
+                  <Gauge className="h-5 w-5 text-cyan-500 mr-3" />
+                  <span>スピード</span>
+                </div>
+                <span className="text-sm text-slate-500">現在の走行速度を表示。</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Actions & Effects */}
+          <div className="space-y-6">
+            {/* Action Buttons */}
+            <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+               <h4 className="text-lg font-bold text-white mb-4 flex items-center">
+                <MousePointerClick className="mr-2 h-5 w-5 text-amber-400" />
+                アクションボタン
+              </h4>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="text-center p-4 bg-slate-900 rounded-lg border border-slate-800 hover:border-amber-500/30 transition-colors">
+                  <div className="inline-block px-3 py-1 bg-amber-600 text-white font-black italic rounded mb-2 transform -skew-x-12">
+                    DODGE!
+                  </div>
+                  <p className="text-xs text-slate-400 mt-2">
+                    障害物が近づくと出現。<br/>タップで回避。
+                  </p>
+                </div>
+                <div className="text-center p-4 bg-slate-900 rounded-lg border border-slate-800 hover:border-amber-500/30 transition-colors">
+                  <div className="inline-block px-3 py-1 bg-red-600 text-white font-black italic rounded mb-2 transform -skew-x-12">
+                    DUCK!
+                  </div>
+                  <p className="text-xs text-slate-400 mt-2">
+                    飛び道具が近づくと出現。<br/>タップで回避。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Comic Effects */}
+            <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+               <h4 className="text-lg font-bold text-white mb-2 flex items-center">
+                <Sparkles className="mr-2 h-5 w-5 text-purple-400" />
+                コミック演出 (Cut-In)
+              </h4>
+              <p className="text-sm text-slate-400 leading-relaxed mb-3">
+                回避成功時に<span className="text-white font-bold italic mx-1">"WHOOSH!"</span><span className="text-white font-bold italic">"ZOOM!"</span>などのアメコミ風文字エフェクトが表示され、爽快感を演出します。
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

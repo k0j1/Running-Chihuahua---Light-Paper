@@ -29,7 +29,7 @@ export const Navbar: React.FC = () => {
             <div className="bg-amber-500 p-1.5 rounded-lg">
               <Gamepad2 className="h-6 w-6 text-slate-900" />
             </div>
-            <span className="font-bold text-xl tracking-tight text-white">Running Chihuahua AI</span>
+            <span className="font-bold text-xl tracking-tight text-white">Running Chihuahua</span>
           </div>
           
           <div className="hidden md:block">

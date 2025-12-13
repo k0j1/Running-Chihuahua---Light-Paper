@@ -20,9 +20,6 @@ export const Hero: React.FC = () => {
         
         <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6">
           <span className="block">Running Chihuahua</span>
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-600">
-            AI Powered
-          </span>
         </h1>
         
         <p className="mt-4 max-w-2xl mx-auto text-xl text-slate-300 leading-relaxed">
