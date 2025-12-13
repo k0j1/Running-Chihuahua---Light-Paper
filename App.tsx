@@ -19,14 +19,14 @@ const App: React.FC = () => {
         <Section id="abstract" title="1. 概要 (Abstract)" subtitle="Web3時代の新しいランナーゲーム体験">
           <div className="prose prose-invert prose-lg max-w-none text-slate-300">
             <p className="leading-relaxed">
-              <strong className="text-amber-400">Running Chihuahua AI</strong> は、Farcaster Frames および Webブラウザ上で動作する、AI搭載型の3D無限ランナーゲームです。
+              <strong className="text-amber-400">Running Chihuahua</strong> は、Farcaster Frames および Webブラウザ上で動作する、3Dランナーゲームです。
             </p>
             <p className="mt-4 leading-relaxed">
               プレイヤーは勇敢なチワワとなり、背後から迫りくる巨大なボス（ゴリラ、チーター、ドラゴン）から逃げ続けなければなりません。前方から現れる障害物を「ドッジ（回避）」し、後方からの攻撃を「ダック（しゃがみ）」で避けながら、生存距離とスコアを競います。
             </p>
             <div className="mt-6 p-4 bg-amber-500/10 border-l-4 border-amber-500 rounded-r-lg">
               <p className="italic text-amber-200">
-                Google Gemini APIによるリアルタイムAI実況機能と、Farcasterエコシステムに統合されたソーシャルランキング機能を特徴としています。
+                Farcasterエコシステムに統合されたソーシャルランキング機能を特徴としています。
               </p>
             </div>
           </div>

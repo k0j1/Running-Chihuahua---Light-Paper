@@ -4,33 +4,53 @@ import { CheckCircle2, Circle, Clock } from 'lucide-react';
 
 const roadmapData: RoadmapItem[] = [
   {
-    phase: 'Phase 1',
+    phase: 'Phase 0',
     title: 'ローンチ (Current)',
     status: 'completed',
     items: [
-      '基本ゲームループの実装',
+      'ランニングチワワアプリ ローンチ',
       '3種類のボス (Gorilla, Cheetah, Dragon) 実装',
-      'Farcaster Frame v2 対応',
-      'Supabaseによるランキング実装'
+      'ランキング実装'
+    ]
+  },
+  {
+    phase: 'Phase 1',
+    title: 'チワワトークン配布開始',
+    status: 'future',
+    items: [
+      '12/下旬からチワワトークン配布開始'
     ]
   },
   {
     phase: 'Phase 2',
-    title: 'AI機能の拡張',
-    status: 'current',
+    title: 'トークン用途追加',
+    status: 'future',
     items: [
-      'レース展開に応じたリアルタイム実況機能の強化',
-      'AIによる動的な難易度調整（調査中）'
+      '1月 ランニングチワワ チワワトークン仕様用途追加'
     ]
   },
   {
     phase: 'Phase 3',
-    title: 'エコシステム拡大',
+    title: 'ゲーム第2弾開発開始',
     status: 'future',
     items: [
-      'NFT保有者限定のキャラクタースキン機能',
-      'ランキング上位者へのトークン/NFTエアドロップ',
-      'シーズン制ランキングの導入'
+      '2月 チワワトークン ゲーム第2弾開発開始'
+    ]
+  },
+  {
+    phase: 'Phase 4',
+    title: 'ゲーム第2弾ローンチ',
+    status: 'future',
+    items: [
+      '3月 チワワトークン ゲーム第2弾ローンチ'
+    ]
+  },
+  {
+    phase: 'Phase 5',
+    title: '価値向上プロジェクト',
+    status: 'future',
+    items: [
+      '未定 チワワトークン価値向上プロジェクト開始'
     ]
   }
 ];
@@ -47,8 +67,8 @@ export const Roadmap: React.FC = () => {
             'bg-slate-700 border-slate-900'
           }`} />
           
-          <div className="flex items-center mb-2">
-            <span className={`text-xs font-bold uppercase tracking-wider px-2 py-1 rounded mr-3 ${
+          <div className="flex flex-col sm:flex-row sm:items-center mb-2">
+            <span className={`inline-block w-fit text-xs font-bold uppercase tracking-wider px-2 py-1 rounded mb-2 sm:mb-0 sm:mr-3 ${
               item.status === 'completed' ? 'bg-green-500/20 text-green-400' :
               item.status === 'current' ? 'bg-amber-500/20 text-amber-400' :
               'bg-slate-700 text-slate-400'
@@ -62,10 +82,10 @@ export const Roadmap: React.FC = () => {
             {item.items.map((subItem, idx) => (
               <li key={idx} className="flex items-start text-slate-300">
                 {item.status === 'completed' ? 
-                  <CheckCircle2 className="h-5 w-5 text-green-500 mr-2 flex-shrink-0" /> : 
+                  <CheckCircle2 className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" /> : 
                   item.status === 'current' ?
-                  <Clock className="h-5 w-5 text-amber-500 mr-2 flex-shrink-0" /> :
-                  <Circle className="h-5 w-5 text-slate-600 mr-2 flex-shrink-0" />
+                  <Clock className="h-5 w-5 text-amber-500 mr-2 flex-shrink-0 mt-0.5" /> :
+                  <Circle className="h-5 w-5 text-slate-600 mr-2 flex-shrink-0 mt-0.5" />
                 }
                 <span className="text-sm md:text-base">{subItem}</span>
               </li>

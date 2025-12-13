@@ -26,9 +26,9 @@ export const Hero: React.FC = () => {
         </h1>
         
         <p className="mt-4 max-w-2xl mx-auto text-xl text-slate-300 leading-relaxed">
-          AI実況 × 3D無限ランナー × ソーシャル。
+          3Dランナー × トークン
           <br className="hidden md:block" />
-          Farcaster Frames上で動作する、次世代の「追いかけっこ」体験。
+          Farcaster Frames上で動作する、次世代の「追いかけっこ」
         </p>
         
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
