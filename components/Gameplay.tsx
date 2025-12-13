@@ -187,16 +187,6 @@ export const Gameplay: React.FC = () => {
               </div>
             </div>
 
-            {/* Comic Effects */}
-            <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
-               <h4 className="text-lg font-bold text-white mb-2 flex items-center">
-                <Sparkles className="mr-2 h-5 w-5 text-purple-400" />
-                コミック演出 (Cut-In)
-              </h4>
-              <p className="text-sm text-slate-400 leading-relaxed mb-3">
-                回避成功時に<span className="text-white font-bold italic mx-1">"WHOOSH!"</span><span className="text-white font-bold italic">"ZOOM!"</span>などのアメコミ風文字エフェクトが表示され、爽快感を演出します。
-              </p>
-            </div>
           </div>
         </div>
       </div>

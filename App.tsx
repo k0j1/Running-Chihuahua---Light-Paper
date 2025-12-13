@@ -25,11 +25,6 @@ const App: React.FC = () => {
               プレイヤーは勇敢なチワワとなり、背後から迫りくる巨大なボス（ゴリラ、チーター、ドラゴン）から逃げ続けなければなりません。前方から現れる障害物を「ドッジ（回避）」し、後方からの攻撃を「ダック（しゃがみ）」で避けながら、生存距離とスコアを競います。<br/>
               ※Phase１～スコアによってチワワトークンが発行されます。
             </p>
-            <div className="mt-6 p-4 bg-amber-500/10 border-l-4 border-amber-500 rounded-r-lg">
-              <p className="italic text-amber-200">
-                Farcasterエコシステムに統合されたソーシャルランキング機能を特徴としています。
-              </p>
-            </div>
           </div>
         </Section>
 
