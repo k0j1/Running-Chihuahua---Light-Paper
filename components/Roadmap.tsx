@@ -1,61 +1,15 @@
 import React from 'react';
-import { RoadmapItem } from '../types';
 import { CheckCircle2, Circle, Clock } from 'lucide-react';
+import { Language } from '../types';
+import { content } from '../data/content';
 
-const roadmapData: RoadmapItem[] = [
-  {
-    phase: 'Phase 0',
-    title: 'ローンチ (Current)',
-    status: 'completed',
-    items: [
-      'ランニングチワワアプリ ローンチ',
-      '3種類のボス (Gorilla, Cheetah, Dragon) 実装',
-      'ランキング実装'
-    ]
-  },
-  {
-    phase: 'Phase 1',
-    title: 'チワワトークン配布開始',
-    status: 'future',
-    items: [
-      '12/下旬からチワワトークン配布開始'
-    ]
-  },
-  {
-    phase: 'Phase 2',
-    title: 'トークン用途追加',
-    status: 'future',
-    items: [
-      '1月 ランニングチワワ チワワトークン仕様用途追加'
-    ]
-  },
-  {
-    phase: 'Phase 3',
-    title: 'ゲーム第2弾開発開始',
-    status: 'future',
-    items: [
-      '2月 チワワトークン ゲーム第2弾開発開始'
-    ]
-  },
-  {
-    phase: 'Phase 4',
-    title: 'ゲーム第2弾ローンチ',
-    status: 'future',
-    items: [
-      '3月 チワワトークン ゲーム第2弾ローンチ'
-    ]
-  },
-  {
-    phase: 'Phase 5',
-    title: '価値向上プロジェクト',
-    status: 'future',
-    items: [
-      '未定 チワワトークン価値向上プロジェクト開始'
-    ]
-  }
-];
+interface RoadmapProps {
+  lang: Language;
+}
 
-export const Roadmap: React.FC = () => {
+export const Roadmap: React.FC<RoadmapProps> = ({ lang }) => {
+  const roadmapData = content[lang].roadmapItems;
+
   return (
     <div className="relative border-l-4 border-slate-700 ml-4 md:ml-8 space-y-12 py-4">
       {roadmapData.map((item, index) => (
