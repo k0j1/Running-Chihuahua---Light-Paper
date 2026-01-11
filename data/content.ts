@@ -6,7 +6,8 @@ export const content = {
     nav: [
       { label: '概要', href: '#abstract' },
       { label: 'ゲームプレイ', href: '#gameplay' },
-      { label: 'トークン', href: '#token' },
+      { label: '報酬・Web3', href: '#rewards' },
+      { label: 'スタミナ・アイテム', href: '#stamina' },
       { label: 'ソーシャル', href: '#social' },
       { label: 'ロードマップ', href: '#roadmap' },
     ],
@@ -29,21 +30,39 @@ export const content = {
       gameplay: {
         title: "2. ゲームプレイ (Gameplay)"
       },
-      token: {
-        title: "3. トークン & リワード (Token & Rewards)",
-        name: "$CHH (Running Chihuahua Token)",
-        desc: "Baseチェーン上でClankerによって展開された独自トークンです。",
-        earn: "ゲーム終了後のリザルト画面にて、獲得したスコアに応じて $CHH トークンを獲得（Claim）することができます。",
+      web3Rewards: {
+        title: "3. Web3 & 報酬システム ($CHH)",
+        subtitle: "Baseネットワークと完全に統合された報酬エコシステム",
+        tokenName: "$CHH (Running Chihuahua Token)",
+        tokenDesc: "Baseチェーン上でClankerによって展開された独自トークンです。",
+        rewardRate: "5% 報酬還元",
+        rewardDesc: "1回のランで獲得したスコアの 5% が $CHHトークンとして計算され、付与されます。",
+        claimTitle: "即時Claim (請求)",
+        claimDesc: "ラン終了後、Baseネットワーク上のスマートコントラクトを通じて即座にウォレットへ請求が可能です。",
+        rouletteTitle: "24h ログインボーナス",
+        rouletteDesc: "24時間ごとに1回、ルーレットを回して強力なアイテムを獲得できます（オンチェーンでの権利確認を含む）。",
         clankerBtn: "Clankerで詳細を見る"
       },
+      staminaItems: {
+        title: "4. スタミナ & アイテム",
+        subtitle: "戦略的なプレイを可能にするリソース管理",
+        staminaTitle: "スタミナシステム",
+        staminaMax: "最大 5 スタミナ",
+        staminaUsage: "1回のプレイで 1スタミナを消費",
+        staminaRegen: "2時間ごとに 1スタミナが自然回復",
+        inventoryTitle: "インベントリ (アイテム)",
+        itemVitality: { name: "Vitality (活力)", desc: "初期ライフが3から4に増加。" },
+        itemRecovery: { name: "Recovery (回復)", desc: "障害物を回避するたびにHPが0.2回復。" },
+        itemShield: { name: "Shield (シールド)", desc: "プレイ中に任意のタイミングで使用でき、ダメージを1回完全に無効化。" }
+      },
       social: {
-        title: "4. ソーシャル機能 (Social)",
+        title: "5. ソーシャル機能 (Social)",
         playNow: { title: "Play Now", desc: "ウォレット接続ですぐに簡単にプレイ可能。" },
         ranking: { title: "Global Ranking", desc: "「High Score (最高得点)」ランキングを提供。トップランナーを目指そう。" },
         share: { title: "Share to Farcaster", desc: "ゲームオーバー時、リザルトをワンタップで投稿。" }
       },
       roadmap: {
-        title: "5. ロードマップ (Roadmap)"
+        title: "6. ロードマップ (Roadmap)"
       }
     },
     gameplay: {
@@ -94,7 +113,7 @@ export const content = {
         phase: 'Phase 0',
         title: 'ローンチ',
         status: 'completed',
-        items: ['Running Chihuahua App Launch', '3 Bosses (Gorilla, Cheetah, Dragon) Implemented', 'Ranking Implemented']
+        items: ['ランニングチワワアプリ ローンチ', '3種類のボス (Gorilla, Cheetah, Dragon) 実装', 'ランキング実装']
       },
       {
         phase: 'Phase 1',
@@ -133,7 +152,8 @@ export const content = {
     nav: [
       { label: 'Abstract', href: '#abstract' },
       { label: 'Gameplay', href: '#gameplay' },
-      { label: 'Token', href: '#token' },
+      { label: 'Rewards/Web3', href: '#rewards' },
+      { label: 'Stamina/Items', href: '#stamina' },
       { label: 'Social', href: '#social' },
       { label: 'Roadmap', href: '#roadmap' },
     ],
@@ -156,21 +176,39 @@ export const content = {
       gameplay: {
         title: "2. Gameplay"
       },
-      token: {
-        title: "3. Token & Rewards",
-        name: "$CHH (Running Chihuahua Token)",
-        desc: "A unique token deployed via Clanker on the Base chain.",
-        earn: "You can claim $CHH tokens based on your score on the result screen after the game ends.",
+      web3Rewards: {
+        title: "3. Web3 & Rewards ($CHH)",
+        subtitle: "A Reward Ecosystem Fully Integrated with the Base Network",
+        tokenName: "$CHH (Running Chihuahua Token)",
+        tokenDesc: "A unique token deployed via Clanker on the Base chain.",
+        rewardRate: "5% Reward Rate",
+        rewardDesc: "5% of your score from a single run is calculated and awarded as $CHH tokens.",
+        claimTitle: "Instant Claim",
+        claimDesc: "Claim tokens instantly to your wallet via smart contracts on the Base network after each run.",
+        rouletteTitle: "24h Login Bonus",
+        rouletteDesc: "Spin the roulette once every 24 hours to win powerful items (includes on-chain entitlement checks).",
         clankerBtn: "View on Clanker"
       },
+      staminaItems: {
+        title: "4. Stamina & Items",
+        subtitle: "Resource Management for Strategic Gameplay",
+        staminaTitle: "Stamina System",
+        staminaMax: "Max 5 Stamina",
+        staminaUsage: "Consumes 1 stamina per play",
+        staminaRegen: "Regenerates 1 stamina every 2 hours",
+        inventoryTitle: "Inventory (Items)",
+        itemVitality: { name: "Vitality", desc: "Increases initial hearts from 3 to 4." },
+        itemRecovery: { name: "Recovery", desc: "Recovers 0.2 HP for every obstacle successfully dodged." },
+        itemShield: { name: "Shield", desc: "Can be used at any time to completely nullify damage once." }
+      },
       social: {
-        title: "4. Social Features",
+        title: "5. Social Features",
         playNow: { title: "Play Now", desc: "Easy to play immediately with wallet connection." },
         ranking: { title: "Global Ranking", desc: "Provides 'High Score' ranking. Aim to be the top runner." },
         share: { title: "Share to Farcaster", desc: "Post results with one tap when game over." }
       },
       roadmap: {
-        title: "5. Roadmap"
+        title: "6. Roadmap"
       }
     },
     gameplay: {
